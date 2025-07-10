@@ -1,47 +1,192 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portafolio en mantenimiento</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f3f4f6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-      color: #333;
-    }
-    .container {
-      max-width: 500px;
-      padding: 2rem;
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      margin-bottom: 1.5rem;
-    }
-    .small {
-      font-size: 0.9rem;
-      color: #666;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KC | Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-  <div class="container">
-    <h1>🚧 En mantenimiento</h1>
-    <p>Mi portafolio está en construcción, pero estaré online muy pronto.</p>
-    <p class="small">Gracias por tu paciencia 🙏</p>
-  </div>
+  <!-- Hero -->
+  <section class="container py-5 text-center">
+    <h1 class="display-4 fw-bold">Hola, soy <br> Keidy Coello.</h1>
+    <h2 class="fw-bold" style="color: #ff007f;">Desarrolladora Web</h2>
+    <a href="#proyectos" class="btn btn-lg mt-4" style="background-color: #ff007f; color: white;">Ver mis proyectos</a>
+  </section>
+
+  <!-- Sobre mí -->
+  <section class="container py-5" id="sobre-mi">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="img/keidy.png" class="rounded-circle img-fluid" alt="Foto de perfil" width="200">
+      </div>
+      <div class="col-md-8 text-center">
+        <h2>Sobre mí</h2>
+        <p>
+          Soy una desarrolladora web recién titulada en el Ciclo de Desarrollo de Aplicaciones Web. A lo largo de mi
+          formación, he desarrollado diversos proyectos donde he podido trabajar con tecnologías como HTML, CSS,
+          JavaScript, MySQL, Java, PHP, Angular y Laravel, que forman la base de mis conocimientos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
+  <section class="container py-5" id="proyectos">
+    <h2 class="mb-4 text-center">Mis Proyectos</h2>
+    <div class="row g-5">
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/bienes_raices.webp" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h4 class="card-title">Proyecto Bienes Raices</h4>
+            <p>Proyecto académico creado durante un curso de desarrollo web. Simula una página de bienes raíces con
+              filtros, diseño adaptable y estructura optimizada.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
+            <a href="https://lucid-austin-a0b4b7.netlify.app/" class="btn-personalizado" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repite para Proyecto 2, 3... -->
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/pagina_fragancias.webp" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Proyectos Fragancias</h5>
+            <p class="card-text">Sitio web desarrollado para una tienda de fragancias femeninas. Presenta un diseño
+              visualmente delicado, con secciones de productos destacados, llamada a la acción y navegación intuitiva.
+              El enfoque está en la estética, la experiencia del usuario y la presentación clara del catálogo.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
+            <a href="https://kcoello16.github.io/sitiowebfragancias" class="btn-personalizado" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/blog_cafe.webp" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto Blog Café</h5>
+            <p class="card-text">Proyecto académico enfocado en la creación de un blog temático sobre café. Incluye
+              secciones para artículos, consejos y talleres. Diseñado con una estructura limpia y responsiva,
+              priorizando la legibilidad y una experiencia de usuario fluida.</p>
+            <p><strong>Tecnologías:</strong> HTML, CSS, Bootstrap</p>
+            <a href="https://awesome-darwin-33e375.netlify.app/" class="btn-personalizado" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card bg-dark text-white h-100">
+          <img src="img/blog_cafe.webp" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Proyecto BirtMobile</h5>
+            <p class="card-text">Proyecto realizado durante el ciclo formativo de Desarrollo de Aplicaciones Web. El
+              objetivo era diseñar y desarrollar una página web adaptada especialmente a dispositivos móviles, aplicando
+              principios de diseño responsive y buenas prácticas de usabilidad.
+            <p><strong>Tecnologías:</strong> HTML, CSS, Sass</p>
+            <a href="https://awesome-darwin-33e375.netlify.app/" class="btn-personalizado" target="_blank">Ver
+              proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fortalezas">
+    <h2>Fortalezas</h2>
+    <div class="fortalezas-grid">
+      <div class="fortaleza">
+        <span>🔧</span>
+        <h3>Resolutiva</h3>
+        <p>Me encanta enfrentar desafíos y encontrar soluciones elegantes mediante el código.</p>
+      </div>
+      <div class="fortaleza">
+        <span>💬</span>
+        <h3>Comunicativa</h3>
+        <p>Trabajo bien en equipo y transmito ideas con claridad para avanzar en conjunto.</p>
+      </div>
+      <div class="fortaleza">
+        <span>🧠</span>
+        <h3>Curiosa</h3>
+        <p>Siempre estoy explorando nuevas tecnologías y mejores prácticas de desarrollo web.</p>
+      </div>
+      <div class="fortaleza">
+        <span>📐</span>
+        <h3>Metódica</h3>
+        <p>Me gusta mantener mi código organizado, legible y bien documentado.</p>
+      </div>
+      <div class="fortaleza">
+        <span>🔥</span>
+        <h3>Comprometida</h3>
+        <p>Tomo cada proyecto con pasión y responsabilidad, cuidando cada detalle.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tecnologías -->
+  <section class="container py-5" id="tecnologias">
+    <h2 class="text-center mb-5 fw-bold">Tecnologías que manejo</h2>
+    <div class="row justify-content-center text-center">
+      <div class="col-6 col-md-2 mb-3"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="40" />
+        <p>HTML5</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3"> <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="40" />
+        <p>CSS3</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3"> <img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"
+          width="40" />
+        <p>JavaScript</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap"
+          width="40" />
+        <p>Bootstrap</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular"
+          width="40" />
+        <p>Angular</p>
+      </div>
+      <div class="col-6 col-md-2 mb-3"><img
+          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="40" />
+
+        <p>Git</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="container py-5" id="contacto">
+    <h3 class="text-center mb-4">Contacto</h3>
+    <div class="text-center">
+      <p>Puedes escribirme a: <strong>keidy_coello@hotmail.com</strong>
+        <br><strong>key.coello@gmail.com</strong>
+      </p>
+      <a href="https://linkedin.com/in/tuusuario" target="_blank" class="btn btn-outline-light">LinkedIn</a>
+      <a href="https://github.com/tuusuario" target="_blank" class="btn btn-outline-light ms-2">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="text-center py-4 text-white" style="background-color: #111;">
+    <p>&copy; 2025 Keidy C. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
+
 </html>
