@@ -1,32 +1,46 @@
+:root {
+  --fondo: #0d0d0d;
+  --gris: #1a1a1a;
+  --primario: #ff007f;
+  --primario-opacity: #ff007f88;
+  --texto-claro: #cccccc;
+  --blanco: #ffffff;
+}
+
 html {
-    font-size: 62.5%;
-    box-sizing: border-box; /* Hack para Box Model **/
-    scroll-snap-type: y mandatory;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-    scroll-behavior: smooth;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
-body{
-    font-size: 16px;;
-    background-color: #0d0d0d; 
-    color: white; 
-    font-family: 'Segoe UI', sans-serif;
+body {
+  font-size: 16px;
+  background-color: var(--fondo);
+  color: var(--blanco);
+  font-family: 'Segoe UI', sans-serif;
 }
 
 /* ======== Hero Section ======== */
-h1, h2 {
+h1,
+h2 {
   text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-li{
+
+li {
   list-style: none;
 }
+
 .btn {
   border-radius: 50px;
   padding: 10px 30px;
@@ -35,7 +49,7 @@ li{
 
 .btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 10px #ff007f88;
+  box-shadow: 0 0 10px var(--primario-opacity);
 }
 
 /* ======== Card (Proyectos) ======== */
@@ -44,7 +58,7 @@ li{
   border-radius: 20px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+
 }
 
 .card:hover {
@@ -53,16 +67,16 @@ li{
 }
 
 .card-title {
-  color: #ffffff;
+  color: var(--blanco);
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 .badge {
   margin-right: 5px;
-  background-color: #1a1a1a;
-  border: 1px solid #ff007f;
-  color: #ff007f;
+  background-color: var(--gris);
+  border: 1px solid var(--primario);
+  color: var(--primario);
   font-size: 0.8rem;
 }
 
@@ -73,9 +87,9 @@ img.rounded-circle {
 
 /* ======== Contacto ======== */
 section#contacto a.btn-outline-light:hover {
-  background-color: #ff007f;
-  color: white;
-  border-color: #ff007f;
+  background-color: var(--primario);
+  color: var(--blanco);
+  border-color: var(--primario);
 }
 
 /* ======== Animaciones con AOS ======== */
@@ -95,43 +109,40 @@ section#contacto a.btn-outline-light:hover {
     margin-bottom: 20px;
   }
 }
-.btn-personalizado{
-  background-color: #ff0077; /* Rosa coral o fucsia */
-  color: white;
+
+.btn-personalizado {
+  background-color:var(--primario);
+  color: var(--blanco);
   font-size: 1.2rem;
   padding: 0.7rem 2rem;
-  border-radius: 999px; /* Totalmente redondeado */
+  border-radius: 999px;
   margin-right: 8px;
   margin-top: 8px;
   display: inline-block;
 }
-footer{
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem 0;
-}
+
 
 #fortalezas {
-  background-color: var(--gris);
   padding: 4rem 2rem;
   text-align: center;
 }
 
 #fortalezas h2 {
   color: var(--secundario);
-  font-size: 2.2rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
 }
 
 .fortalezas-grid {
+  width: 70%;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 
 .fortaleza {
-  background-color: var(--fondo);
+  background-color: var(--gris);
   border: 1px solid var(--primario);
   padding: 1.5rem;
   border-radius: 10px;
@@ -151,11 +162,19 @@ footer{
 
 .fortaleza h3 {
   color: #ff007f;
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .fortaleza p {
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--texto-claro);
+}
+
+
+footer {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  padding: 1rem 0;
 }
